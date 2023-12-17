@@ -1,10 +1,17 @@
+/* style.css */
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #000;
+  color: #FF4500;
   font-family: Arial, sans-serif;
-  background-color: darkorange; /* Set the background color to dark orange */
-  background-image: url('flame-network.png'); /* Set the background image to flame network */
-  background-repeat: repeat; /* Repeat the background image to cover the entire page */
-  height: 100vh; /* Set the height of the flame background */
-  position: relative;
+}
+.flame {
+  animation: flicker 1s infinite alternate;
+}
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
 }
